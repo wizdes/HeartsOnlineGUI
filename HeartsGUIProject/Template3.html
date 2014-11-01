@@ -52,10 +52,10 @@
         var img;
         var stage;
         var imgArray;
-        var mouseTarget;	// the display object currently under the mouse, or being dragged
-        var dragStarted;	// indicates whether we are currently in a drag operation
-        var offset;
-
+        // 5,5 + 100, 0
+        // 5, 105 + 0, 50
+        // 5, 605 + 100, 0
+        // 1200, 105 + 0, 50
 
         function init() {
             if (window.top != window) {
@@ -85,17 +85,15 @@
 
             for(i = 0; i < 52; i++){
                 bmp = new createjs.Bitmap(imgArray[i]);
-                bmp.x = 5 + canvas.width /13 * (i % 13);
-                bmp.y = 5 + canvas.height / 5 * Math.floor(i/ 13);
+                bmp = getXAndY(canvas, bmp, i);
                 bmp.scaleX = bmp.scaleY = 0.18;
 
                 // using "on" binds the listener to the scope of the currentTarget by default
                 // in this case that means it executes in the scope of the button.
                 bmp.on("mousedown", function(evt) {
                     this.parent.addChild(this);
-                    this.x = 5;
-                    this.y = 620;
-                    this.visible = true;
+                    this.x = 600;
+                    this.y = 350;
                     update = true;
                 });
 
@@ -121,12 +119,12 @@
 <body onload="init()">
 
 <header id="header" class="EaselJS">
-    <h1><span class="text-product">Easel<strong>JS</strong></span> Simple Transform Example</h1>
-    <p>A simple example of EaselJS transformations.</p>
+    <h1>Hearts Card Game</h1>
+    <p>The hearts card game build using Easel and Websockets.</p>
 </header>
 
 <div id="canvas-container">
-    <canvas id="testCanvas" width="1280" height="768">Your browser doesn't support canvas</canvas>
+    <canvas id="testCanvas" width="1280" height="768">Your browser doesn't support easel.js.</canvas>
 </div>
 
 </body>

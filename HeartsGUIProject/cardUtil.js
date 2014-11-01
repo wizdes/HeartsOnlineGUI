@@ -54,3 +54,37 @@ function GetCardName(i){
 
     return cardValueString + "_of_" + cardSuitString + additive;
 }
+
+// 105,5 + 80, 0
+// 5, 105 + 0, 25
+// 5, 605 + 98, 0
+// 1185, 105 + 0, 25
+function getXAndY(canvas, bmp, i){
+    setVal = Math.floor(i / 13);
+    iterVal = i % 13;
+
+    switch(setVal){
+        case 0:
+            bmp.x = 105 + 80 * iterVal;
+            bmp.y = 5;
+            break;
+        case 1:
+            bmp.x = 5 ;
+            bmp.y = 105 + 25 * iterVal;
+            break;
+        case 2:
+            bmp.x = 5 + 98 * iterVal;
+            bmp.y = 605;
+            break;
+        case 3:
+            bmp.x = 1185;
+            bmp.y = 105 + 25 * iterVal;
+            break;
+        default:
+            bmp.x = 0;
+            bmp.y = 0;
+            break;
+    }
+
+    return bmp;
+}

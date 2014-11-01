@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="506f7958-9df5-4f98-bec8-ba1599c1f3e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cardUtil.js" />
-      <change type="NEW" beforePath="" afterPath="C:\Users\Yi\Documents\GitHub\HeartsOnlineGUI\src\.idea\encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="C:\Users\Yi\Documents\GitHub\HeartsOnlineGUI\src\.idea\misc.xml" />
-      <change type="NEW" beforePath="" afterPath="C:\Users\Yi\Documents\GitHub\HeartsOnlineGUI\src\.idea\modules.xml" />
-      <change type="NEW" beforePath="" afterPath="C:\Users\Yi\Documents\GitHub\HeartsOnlineGUI\src\.idea\scopes\scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="C:\Users\Yi\Documents\GitHub\HeartsOnlineGUI\src\.idea\src.iml" />
-      <change type="NEW" beforePath="" afterPath="C:\Users\Yi\Documents\GitHub\HeartsOnlineGUI\src\.idea\vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="C:\Users\Yi\Documents\GitHub\HeartsOnlineGUI\src\.idea\workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Template3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Template4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Template2.html" afterPath="$PROJECT_DIR$/Template2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cardUtil.js" afterPath="$PROJECT_DIR$/cardUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HeartsGUIProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,11 +40,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Template2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Template2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Template2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4144893" vertical-offset="1334" max-vertical-offset="2346">
-              <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+            <state vertical-scroll-proportion="-14.5" vertical-offset="1476" max-vertical-offset="2346">
+              <caret line="109" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Template3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Template3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.423077" vertical-offset="1187" max-vertical-offset="2312">
+              <caret line="98" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Template4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Template4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43333334" vertical-offset="1374" max-vertical-offset="2312">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cardUtil.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cardUtil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1598">
+              <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -58,46 +85,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-10.074074" vertical-offset="1683" max-vertical-offset="2652">
               <caret line="131" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cardUtil.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cardUtil.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpriteSheet_simple.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../HeartsLib/lib/EaselJS-master/examples/SpriteSheet_simple.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5" vertical-offset="790" max-vertical-offset="1581">
-              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sprite.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../HeartsLib/lib/EaselJS-master/examples/Sprite.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="1785" max-vertical-offset="3077">
-              <caret line="109" column="73" selection-start-line="109" selection-start-column="73" selection-end-line="109" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Icons.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../HeartsLib/lib/EaselJS-master/examples/Icons.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="38.576923" vertical-offset="1377" max-vertical-offset="2516">
-              <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -114,8 +101,10 @@
         <option value="$PROJECT_DIR$/Template2" />
         <option value="$PROJECT_DIR$/playingCards/util.js" />
         <option value="$PROJECT_DIR$/Template1.html" />
-        <option value="$PROJECT_DIR$/cardUtil.js" />
         <option value="$PROJECT_DIR$/Template2.html" />
+        <option value="$PROJECT_DIR$/cardUtil.js" />
+        <option value="$PROJECT_DIR$/Template3.html" />
+        <option value="$PROJECT_DIR$/Template4.html" />
       </list>
     </option>
   </component>
@@ -184,14 +173,20 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../src" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Yi/Documents/GitHub/HeartsLib/lib/EaselJS-master/examples/DragAndDrop.html" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Template2.html">
+  <component name="RunManager" selected="JavaScript Debug.Template3.html">
     <configuration default="false" name="Template2" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HeartsGUIProject/Template2">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
     <configuration default="false" name="Template2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HeartsGUIProject/Template2.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Template3.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HeartsGUIProject/Template3.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -228,14 +223,16 @@
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Template2" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Template2.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Template3.html" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Template2.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Template2" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Template3.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Template2.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Template2" />
       </list>
     </recent_temporary>
   </component>
@@ -342,10 +339,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cardUtil.js">
+    <entry file="file://$PROJECT_DIR$/Template2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        <state vertical-scroll-proportion="-14.5" vertical-offset="1476" max-vertical-offset="2346">
+          <caret line="109" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -358,10 +355,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Template2.html">
+    <entry file="file://$PROJECT_DIR$/cardUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4144893" vertical-offset="1334" max-vertical-offset="2346">
-          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1598">
+          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.423077" vertical-offset="1187" max-vertical-offset="2312">
+          <caret line="98" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43333334" vertical-offset="1374" max-vertical-offset="2312">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding />
         </state>
       </provider>
