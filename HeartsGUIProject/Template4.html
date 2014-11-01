@@ -88,13 +88,8 @@
             players[2].setPlayerNum(2);
             players[3].setPlayerNum(3);
 
-
-            // enable touch interactions if supported on the current device:
             createjs.Touch.enable(stage);
-
-            // enabled mouse over / out events
             stage.enableMouseOver(10);
-            //stage.mouseMoveOutside = true; // keep tracking the mouse even when it leaves the canvas
 
             for( i = 0; i < 52; i++){
                 imgLoader = new Image();
@@ -121,18 +116,13 @@
                     bmp.y = position.y;
                     bmp.scaleX = bmp.scaleY = 0.18;
 
-                    // using "on" binds the listener to the scope of the currentTarget by default
-                    // in this case that means it executes in the scope of the button.
                     bmp.on("mousedown", onCardClick);
-
                     stage.addChild(bmp);
                 }
             }
 
             update = true;
-
             stage.update();
-
             createjs.Ticker.addEventListener("tick", tick);
         }
 

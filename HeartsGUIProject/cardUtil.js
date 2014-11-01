@@ -120,9 +120,17 @@ function getXAndY(canvas, bmp, i){
     return bmp;
 }
 
+function getPlayerFromXY(x,y){
+    if(y == 5) return 0;
+    if(y == 605) return 2;
+    if(x == 1185) return 3;
+    return 1;
+}
+
 function onCardClick(evt) {
     this.parent.addChild(this);
-    this.x = 600;
-    this.y = 350;
+    playerNum = getPlayerFromXY(this.x, this.y);
+    this.x = 450 + playerNum * 100;
+    this.y = 300;
     update = true;
 }
