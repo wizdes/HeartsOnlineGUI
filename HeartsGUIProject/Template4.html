@@ -52,10 +52,20 @@
         var img;
         var stage;
         var imgArray;
-        // 5,5 + 100, 0
-        // 5, 105 + 0, 50
-        // 5, 605 + 100, 0
-        // 1200, 105 + 0, 50
+
+        var players;
+
+        function Player(){
+            this.cardArray = [];
+            this.playerNum = 0;
+            this.setPlayerNum = function(i) {
+                this.playerNum = i;
+            };
+
+            this.addCardToPlayer = function(card){
+                this.cardArray[this.cardArray.length] = card;
+            }
+        }
 
         function init() {
             if (window.top != window) {
@@ -65,8 +75,19 @@
             var canvas = document.getElementById("testCanvas");
             stage = new createjs.Stage(canvas);
 
-
+            players = [];
             imgArray = [];
+
+            players[0] = new Player();
+            players[1] = new Player();
+            players[2] = new Player();
+            players[3] = new Player();
+
+            players[0].setPlayerNum(0);
+            players[1].setPlayerNum(1);
+            players[2].setPlayerNum(2);
+            players[3].setPlayerNum(3);
+
 
             // enable touch interactions if supported on the current device:
             createjs.Touch.enable(stage);
@@ -83,21 +104,29 @@
                 imgArray[i] = imgLoader;
             }
 
-            for(i = 0; i < 52; i++){
-                bmp = new createjs.Bitmap(imgArray[i]);
-                bmp = getXAndY(canvas, bmp, i);
-                bmp.scaleX = bmp.scaleY = 0.18;
+            for(i = 0; i < 4; i++){
+                for(j = 0; j < 13; j++){
+                    players[i].addCardToPlayer(i*13 + j);
+                }
+            }
 
-                // using "on" binds the listener to the scope of the currentTarget by default
-                // in this case that means it executes in the scope of the button.
-                bmp.on("mousedown", function(evt) {
-                    this.parent.addChild(this);
-                    this.x = 600;
-                    this.y = 350;
-                    update = true;
-                });
+            for(i = 0; i < 4; i++){
+                player = players[i];
 
-                stage.addChild(bmp);
+                for(j = 0; j < 13; j++){
+                    bmp = new createjs.Bitmap(imgArray[player.cardArray[j]]);
+                    var position = new Pair();
+                    position.init(player.cardArray[j]);
+                    bmp.x = position.x;
+                    bmp.y = position.y;
+                    bmp.scaleX = bmp.scaleY = 0.18;
+
+                    // using "on" binds the listener to the scope of the currentTarget by default
+                    // in this case that means it executes in the scope of the button.
+                    bmp.on("mousedown", onCardClick);
+
+                    stage.addChild(bmp);
+                }
             }
 
             update = true;
@@ -113,7 +142,6 @@
                 stage.update(event);
             }
         }
-
     </script>
 </head>
 <body onload="init()">

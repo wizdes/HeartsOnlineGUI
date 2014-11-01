@@ -55,6 +55,38 @@ function GetCardName(i){
     return cardValueString + "_of_" + cardSuitString + additive;
 }
 
+function Pair(){
+    this.x = -1;
+    this.y = -1;
+    this.init = function(i){
+        setVal = Math.floor(i / 13);
+        iterVal = i % 13;
+
+        switch(setVal){
+            case 0:
+                this.x = 105 + 80 * iterVal;
+                this.y = 5;
+                break;
+            case 1:
+                this.x = 5 ;
+                this.y = 105 + 25 * iterVal;
+                break;
+            case 2:
+                this.x = 5 + 98 * iterVal;
+                this.y = 605;
+                break;
+            case 3:
+                this.x = 1185;
+                this.y = 105 + 25 * iterVal;
+                break;
+            default:
+                this.x = 0;
+                this.y = 0;
+                break;
+        }
+    }
+}
+
 // 105,5 + 80, 0
 // 5, 105 + 0, 25
 // 5, 605 + 98, 0
@@ -85,6 +117,12 @@ function getXAndY(canvas, bmp, i){
             bmp.y = 0;
             break;
     }
-
     return bmp;
+}
+
+function onCardClick(evt) {
+    this.parent.addChild(this);
+    this.x = 600;
+    this.y = 350;
+    update = true;
 }
