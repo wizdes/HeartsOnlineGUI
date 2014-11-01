@@ -126,11 +126,3 @@ function getPlayerFromXY(x,y){
     if(x == 1185) return 3;
     return 1;
 }
-
-function onCardClick(evt) {
-    this.parent.addChild(this);
-    playerNum = getPlayerFromXY(this.x, this.y);
-    this.x = 450 + playerNum * 100;
-    this.y = 300;
-    update = true;
-}

@@ -53,11 +53,18 @@
         var stage;
         var imgArray;
 
+
+        var cardsInMiddle;
+        var discardedCards;
         var players;
+        var bmpMap;
+        var reverseBmpMap;
 
         function Player(){
             this.cardArray = [];
             this.playerNum = 0;
+            this.cardsInMiddle = [];
+            this.discardedCards = [];
             this.setPlayerNum = function(i) {
                 this.playerNum = i;
             };
@@ -77,6 +84,8 @@
 
             players = [];
             imgArray = [];
+            bmpMap = [];
+            reverseBmpMap = [];
 
             players[0] = new Player();
             players[1] = new Player();
@@ -117,9 +126,27 @@
                     bmp.scaleX = bmp.scaleY = 0.18;
 
                     bmp.on("mousedown", onCardClick);
+                    reverseBmpMap[player.cardArray[j]] = bmp;
                     stage.addChild(bmp);
                 }
             }
+
+            // Create a new Text object and a rectangle Shape object, and position them inside a container:
+            var container = new createjs.Container();
+            container.x = 200;
+            container.y = 200;
+
+            var target = new createjs.Shape();
+            target.graphics.beginFill("#F00").drawRect(-10,-10,300,60).beginFill("#FFF");
+            container.addChild(target);
+
+            var txt = new createjs.Text("Double Click Me!", "36px Arial", "#FFF");
+            txt.textBaseline = "top";
+            container.addChild(txt);
+
+            stage.addChild(container);
+
+            container.addEventListener("dblclick", function(evt) { clearMiddleCards(); });
 
             update = true;
             stage.update();
@@ -132,6 +159,39 @@
                 stage.update(event);
             }
         }
+
+        function clearMiddleCards(){
+            for(i = 0; i < 4; i++){
+                if(players[i].cardsInMiddle.length == 0){
+                    return;
+                }
+            }
+            for(i = 0; i < 4; i++){
+                for(index = 0; index < players[i].cardsInMiddle.length; index++){
+                    var value = players[i].cardsInMiddle[index];
+                    players[i].discardedCards[players[i].discardedCards.length] = value;
+                    reverseBmpMap[value].visible = false;
+                    update = true;
+                }
+                players[i].cardsInMiddle = [];
+            }
+        }
+
+        function onCardClick(evt) {
+            this.parent.addChild(this);
+            playerNum = getPlayerFromXY(this.x, this.y);
+            this.x = 450 + playerNum * 100;
+            this.y = 300;
+            update = true;
+            var cardNum = reverseBmpMap.indexOf(this);
+            for(i = 0; i < 4; i++){
+                if(players[i].cardArray.indexOf(cardNum) == -1){
+                    continue;
+                }
+                players[i].cardsInMiddle.push(cardNum);
+            }
+        }
+
     </script>
 </head>
 <body onload="init()">
